@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #9696ce;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.nav a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #ffcc00;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background: rgb(223, 215, 215);
+  list-style: none;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav li:hover .dropdown {
+  display: block;
+}
+
+.carousel {
+  position: relative;
+  max-width: 40%;
+  margin: 2em auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* Ocultar los botones radio */
+.carousel input {
+  display: none;
+}
+
+/* Indicadores de los botones radio */
+.indicators {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.indicators label {
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.carousel input:checked + .slides {
+  transform: translateX(calc(-100% * var(--i)));
+}
+
+.carousel input:nth-of-type(1):checked ~ .indicators label:nth-of-type(1),
+.carousel input:nth-of-type(2):checked ~ .indicators label:nth-of-type(2),
+.carousel input:nth-of-type(3):checked ~ .indicators label:nth-of-type(3),
+.carousel input:nth-of-type(4):checked ~ .indicators label:nth-of-type(4) {
+  background-color: #333;
+}
+
+.products {
+  max-width: 80%;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.product {
+  background: #fff;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.product p {
+  color: #666;
+}
+
+.product button {
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Venta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Productos</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="producto.html">Inicio</a></li>
+            <li>
+              <a href="#productos">Productos</a>
+              <ul class="dropdown">
+                <li><a href="#futbol">Fútbol</a></li>
+                <li><a href="#pesas">Pesas</a></li>
+                <li><a href="#tenis">Tenis</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <!-- Botones radio para navegación -->
+        <input type="radio" name="slider" id="slide1" checked style="--i: 0;">
+        <input type="radio" name="slider" id="slide2" style="--i: 1;">
+        <input type="radio" name="slider" id="slide3" style="--i: 2;">
+        <input type="radio" name="slider" id="slide4" style="--i: 3;">
+
+        <div class="slides">
+            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 1"></div>
+            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 2"></div>
+            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 3"></div>
+            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 4"></div>
+        </div>
+
+        <!-- Indicadores de navegación -->
+        <div class="indicators">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
+
+    <section class="products">
+        <div class="product">
+            <img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>$10.00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>$20.00</p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>$30.00</p>
+            <button>Comprar</button>
+        </div>
+    </section>
+</body>
+</html>

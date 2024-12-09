@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Venta</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ba66837bb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -12,30 +13,36 @@
         <nav>
           <ul class="nav">
             <li><a href="producto.html">Inicio</a></li>
+            <li><a href="iniciosesion.html">registro</a></li>
             <li>
-              <a href="#productos">Productos</a>
+              <a href="producto.html">Productos</a>
+
               <ul class="dropdown">
-                <li><a href="#futbol">Fútbol</a></li>
+                <li><a href="futbol.html">Fútbol</a></li>
                 <li><a href="#pesas">Pesas</a></li>
                 <li><a href="#tenis">Tenis</a></li>
               </ul>
             </li>
+            <button>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
           </ul>
         </nav>
+        
     </header>
 
     <div class="carousel">
         <!-- Botones radio para navegación -->
-        <input type="radio" name="slider" id="slide1" checked style="--i: 0;">
-        <input type="radio" name="slider" id="slide2" style="--i: 1;">
-        <input type="radio" name="slider" id="slide3" style="--i: 2;">
-        <input type="radio" name="slider" id="slide4" style="--i: 3;">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
 
         <div class="slides">
-            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 1"></div>
-            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 2"></div>
+            <div class="slide"><img src="img/raqueta.webp" alt="Producto 1"></div>
+            <div class="slide"><img src="img/basquet.jpg" alt="Producto 2"></div>
             <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 3"></div>
-            <div class="slide"><img src="img/4dd9b76e55a331abfbaaf5da458bed36.jpeg" alt="Producto 4"></div>
+            <div class="slide"><img src="https://via.placeholder.com/800x300/FF33A6/FFFFFF?text=Producto+4" alt="Producto 4"></div>
         </div>
 
         <!-- Indicadores de navegación -->
@@ -67,5 +74,14 @@
             <button>Comprar</button>
         </div>
     </section>
+    <audio controls><source src="John Newman - Love Me Again.mp3" type="audio/mp3"></audio>
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
 </body>
 </html>

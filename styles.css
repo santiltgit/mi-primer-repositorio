@@ -80,12 +80,14 @@ nav button {
 }
 
 .carousel {
-  position: relative;
-  width: 100%;
-  margin: 1rem auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ position: relative;
+      width: 60%;
+      max-width: 7900px; /* Set your desired max width */
+      height: 620px;    /* Set your desired height */
+      margin: auto;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      border-radius: 10px;
 }
 
 .slides {
@@ -101,8 +103,8 @@ nav button {
 
 .slide img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 60%;
+  object-fit: cover; /* Ensures images are resized properly */
 }
 
 input[type="radio"] {
@@ -146,6 +148,26 @@ input#slide4:checked ~ .slides {
 .indicators label:hover,
 input[type="radio"]:checked + .indicators label {
   background-color: #333;
+}
+video{
+  max-width: 100%;
+  border-radius: 10px;
+  margin-left:33%;
+}
+.contenedor-video{
+	position:relative;
+	overflow:hidden;
+	padding-top:56.25%;
+	border: 3px solid red;
+}
+
+.contenedor-video iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+
 }
 /* Products */
 .products {
